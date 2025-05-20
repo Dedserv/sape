@@ -1,0 +1,71 @@
+@import './base.css';
+
+#app {
+  background-color: #e5e7eb;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-slow-enter-active,
+.fade-slow-leave-active {
+  transition: opacity 0.8s ease;
+}
+
+.fade-slow-enter-from,
+.fade-slow-leave-to {
+  opacity: 0;
+}
+
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.slide-enter-from {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.slide-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.slide-slow-enter-active,
+.slide-slow-leave-active {
+  transition: transform 1s ease, opacity 0.3s ease;
+}
+
+.slide-slow-enter-from {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-slow-leave-to {
+  transform: translateX(0);
+  opacity: 0;
+}
+
+.scale-enter-active,
+.scale-leave-active {
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.scale-enter-from {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.scale-leave-to {
+  transform: scale(1.1);
+  opacity: 0;
+}

@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+html {
+    font-size: .6944444444vw;
+    height: 100%;
+
+    @media only screen and (min-width: 1440px) {
+        font-size: 10px;
+    }
+
+    @include respond-to(sm) {
+        font-size: 10px;
+    }
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.4;
+  font-family:
+    Roboto,
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 1.5rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
